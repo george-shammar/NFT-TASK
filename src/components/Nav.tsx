@@ -1,4 +1,5 @@
 import React from 'react';
+import { connectWallet } from "../utils/wallet";
 
 declare const window: any;
 declare var truncate: any
