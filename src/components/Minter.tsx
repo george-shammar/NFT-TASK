@@ -1,6 +1,8 @@
+import "../styles/minter.css";
+
 const Minter = () => {
     return (
-        <div>
+        <div className="minter">
             <h2>Mint Task NFT</h2>
             <form>
                 <input>Address</input>
