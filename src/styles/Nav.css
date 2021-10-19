@@ -30,3 +30,13 @@
 .text:hover{
     color: rgba(45, 11, 90);
 }
+
+.title {
+   background-image: linear-gradient(rgb(244, 114, 182), rgb(190, 24, 93));
+   text-decoration: transparent;
+   border-radius: 9999px;
+   padding-left: 5%;
+   padding-right: 5%;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
