@@ -1,6 +1,4 @@
 import React from 'react';
-import { useState, useEffect } from "react";
-import Web3 from "web3";
 
 declare const window: any;
 declare var truncate: any
