@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from "react";
-import { connectWallet } from "../utils/wallet";
+import { connectWallet, getCurrentWalletConnected } from "../utils/wallet";
 
 declare const window: any;
 
