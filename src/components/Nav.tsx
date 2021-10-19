@@ -1,23 +1,20 @@
-import React from 'react';
 import { useEffect, useState } from "react";
 import { connectWallet, getCurrentWalletConnected } from "../utils/wallet";
 
 declare const window: any;
-
-// let web3 = window.web3;
 
 const Nav = () => {
     const [walletAddress, setWallet] = useState("");
     const [status, setStatus] = useState("");
 
     useEffect(() => {
-      async() => {
+      (async() => {
         const {address, status} = await getCurrentWalletConnected();
         setWallet(address)
         setStatus(status);
     
         addWalletListener();
-      }
+      }) ()
     }, []);
 
     // connect wallet 
@@ -60,9 +57,6 @@ const Nav = () => {
           <div onClick={connectWalletPressed}>Connect Wallet</div>
             )}
         </div>
-
-
-
     </div>
     );
 }
