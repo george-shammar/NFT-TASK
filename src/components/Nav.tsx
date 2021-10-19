@@ -10,7 +10,6 @@ const Nav = () => {
     const [walletAddress, setWallet] = useState("");
     const [status, setStatus] = useState("");
 
-
     // connect wallet 
     const connectWalletPressed = async () => {
         const walletResponse = await connectWallet();
@@ -40,7 +39,21 @@ const Nav = () => {
         <div>
         <h1>task</h1>
 
+        <div>    
+          {walletAddress.length > 0 ? (
+            <div>Connected:   
+              {String(walletAddress).substring(0, 6) +
+              "..." +
+              String(walletAddress).substring(38)}
+            </div>
+            ) : (
+          <div onClick={connectWalletPressed}>Connect Wallet</div>
+            )}
         </div>
+
+
+
+    </div>
     );
 }
 
