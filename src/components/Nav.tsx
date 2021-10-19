@@ -10,6 +10,16 @@ const Nav = () => {
     const [walletAddress, setWallet] = useState("");
     const [status, setStatus] = useState("");
 
+    useEffect(() => {
+      async() => {
+        const {address, status} = await getCurrentWalletConnected();
+        setWallet(address)
+        setStatus(status);
+    
+        addWalletListener();
+      }
+    }, []);
+
     // connect wallet 
     const connectWalletPressed = async () => {
         const walletResponse = await connectWallet();
