@@ -10,6 +10,15 @@ import { connectWallet } from "../utils/wallet";
 const Nav = () => {
     const [walletAddress, setWallet] = useState("");
     const [status, setStatus] = useState("");
+
+
+    // connect wallet 
+    const connectWalletPressed = async () => {
+        const walletResponse = await connectWallet();
+        setStatus(walletResponse.status);
+        setWallet(walletResponse.address);
+    };
+
     return (
         <div>
         <h1>task</h1>
