@@ -47,9 +47,9 @@ const Nav = () => {
         <div className="nav">
         <h1>task</h1>
 
-        <div>    
+        <div className="wallet">    
           {walletAddress.length > 0 ? (
-            <div>Connected:   
+            <div className="text">Connected:   
               {String(walletAddress).substring(0, 6) +
               "..." +
               String(walletAddress).substring(38)}
