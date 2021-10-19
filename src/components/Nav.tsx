@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Web3 from "web3";
 
 declare const window: any;
+declare var truncate: any
 
 let web3 = window.web3;
 
@@ -40,6 +41,16 @@ const Nav = () => {
     return (
         <div>
             <h1>task</h1>
+
+        <button>
+        <div onClick={() => metaMaskStatus ? ethAdd ? null : connectWallet : () => window.open("https://metamask.io/")}>
+          {metaMaskStatus
+            ? ethAdd
+              ? "Connected: " + truncate(ethAdd, 13)
+              : "Connect Wallet"
+            : "Install MetaMask 🦊"}
+        </div>
+      </button>
         </div>
     );
 }
