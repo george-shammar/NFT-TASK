@@ -23,6 +23,20 @@ const Nav = () => {
         setEthAdd(userAdd[0]);
     };
 
+    useEffect(() => {
+        (async () => {
+            if (window.ethereum) {
+                window.web3 = new Web3(window.ethereum);
+                if (await checkWallet()) {
+                  connectWallet();
+                }
+              } else {
+                setMetaMaskStatus(false);
+              }
+        })()
+        
+    }, []);
+
     return (
         <div>
             <h1>task</h1>
