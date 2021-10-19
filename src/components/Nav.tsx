@@ -44,7 +44,7 @@ const Nav = () => {
     }
 
     return (
-        <div>
+        <div className="nav">
         <h1>task</h1>
 
         <div>    
