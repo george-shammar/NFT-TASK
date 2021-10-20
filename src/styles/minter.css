@@ -1,4 +1,6 @@
-.confirm {
+.confirm-text {
+    color: rgb(53, 240, 209);
+    font-weight: bold;
     cursor: pointer;
     border: solid;
     border-color: rgb(53, 240, 209);
@@ -7,4 +9,10 @@
     padding-right: 24px;
     padding-top: 4px;
     padding-bottom: 4px;
+    background-color: rgba(45, 11, 90);
+}
+
+.confirm-text:hover{
+    color: rgba(45, 11, 90);
+    background-color: rgb(53, 240, 209);
 }
