@@ -1,5 +1,4 @@
 .minter {
-    background-image: linear-gradient(to right, rgb(190, 24, 93),  rgba(124, 58, 237));
     height: 300px;
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
@@ -12,7 +11,6 @@
 }
 
 .confirm-text {
-    color: rgb(53, 240, 209);
     font-weight: bold;
     cursor: pointer;
     border: solid;
@@ -22,13 +20,21 @@
     padding-right: 24px;
     padding-top: 4px;
     padding-bottom: 4px;
-    background-color: rgba(45, 11, 90);
-    position: relative;
-    align-content: center;
+    background-color:rgb(53, 240, 209);
+    text-align: center;
+    font-size: 16px;
+}
+
+.color {
+    color: rgb(53, 240, 209);
+}
+
+.font {
+    font-weight: bold;
 }
 
 .confirm-text:hover{
-    color: rgba(45, 11, 90);
+   color: white;
     background-color: rgb(53, 240, 209);
 }
 

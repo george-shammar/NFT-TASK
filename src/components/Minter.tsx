@@ -6,12 +6,12 @@ const Minter = () => {
             <h2>Mint NFT</h2>
             <div className="formContent">
                 <div className="flex">
-                    <label>Recipient's Address:</label>
-                    <input />
+                    <label className="color font">Recipient's Address:</label>
+                    <input type="text"/>
                 </div>
                 <div className="flex">
-                    <label>No of NFTs:</label>
-                    <input />
+                    <label className="color font">No of NFTs:</label>
+                    <input type="number"/>
                 </div>
                 <button className="confirm-text">Confirm</button>
             </div>
