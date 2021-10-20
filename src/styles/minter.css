@@ -1,3 +1,10 @@
-.minter {
-    background-image: pink
+.confirm {
+    cursor: pointer;
+    border: solid;
+    border-color: rgb(53, 240, 209);
+    border-radius: 9999px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
