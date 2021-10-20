@@ -18,22 +18,22 @@
     padding-bottom: 4px;
 }
 
-.wallet:hover{
+.wallet:hover {
     background-color: rgb(53, 240, 209);
 }
 
 .text {
-    color: rgb(53, 240, 209);
+    color: rgba(45, 11, 90);
     font-weight: bold;
 }
 
 .text:hover{
-    color: rgba(45, 11, 90);
+    color: rgb(249, 248, 250);
 }
 
 .title {
-   background-image: linear-gradient(rgb(244, 114, 182), rgb(190, 24, 93));
-   text-decoration: transparent;
+   border: solid;
+   border-color: rgb(53, 240, 209);
    border-radius: 9999px;
    padding-left: 5%;
    padding-right: 5%;

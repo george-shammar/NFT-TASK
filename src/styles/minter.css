@@ -23,6 +23,8 @@
     padding-top: 4px;
     padding-bottom: 4px;
     background-color: rgba(45, 11, 90);
+    position: relative;
+    align-content: center;
 }
 
 .confirm-text:hover{
