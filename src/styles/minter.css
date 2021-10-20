@@ -1,3 +1,7 @@
+.minter {
+    background-image: linear-gradient(to right, rgb(190, 24, 93),  rgba(45, 11, 90)); 
+}
+
 .confirm-text {
     color: rgb(53, 240, 209);
     font-weight: bold;
