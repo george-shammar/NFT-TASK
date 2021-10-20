@@ -1,5 +1,6 @@
 .minter {
-    background-image: linear-gradient(to right, rgb(190, 24, 93),  rgba(45, 11, 90)); 
+    background-image: linear-gradient(to right, rgb(190, 24, 93),  rgba(45, 11, 90));
+    height: 300px;
 }
 
 .confirm-text {
