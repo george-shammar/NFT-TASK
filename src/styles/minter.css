@@ -9,7 +9,6 @@
     position: relative;
     -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
     box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
-    text-align: center;
 }
 
 .confirm-text {
@@ -67,3 +66,8 @@
       transform: none;
     }
   }
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
