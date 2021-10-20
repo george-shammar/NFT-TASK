@@ -7,11 +7,11 @@ const Minter = () => {
             <div className="formContent">
                 <div className="flex">
                     <label className="color font">Recipient's Address:</label>
-                    <input type="text"/>
+                    <input className="input" type="text"/>
                 </div>
                 <div className="flex">
                     <label className="color font">No of NFTs:</label>
-                    <input type="number"/>
+                    <input className="input" type="number"/>
                 </div>
               
                     <button className="confirm-text">Confirm</button>
