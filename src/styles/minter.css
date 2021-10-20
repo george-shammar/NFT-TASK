@@ -1,5 +1,5 @@
 .minter {
-    background-image: linear-gradient(to right, rgb(190, 24, 93),  rgba(45, 11, 90));
+    background-image: linear-gradient(to right, rgb(190, 24, 93),  rgba(124, 58, 237));
     height: 300px;
 }
 
@@ -21,3 +21,40 @@
     color: rgba(45, 11, 90);
     background-color: rgb(53, 240, 209);
 }
+
+.fadeInDown {
+    -webkit-animation-name: fadeindown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }

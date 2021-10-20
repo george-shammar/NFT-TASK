@@ -2,15 +2,15 @@ import "../styles/minter.css";
 
 const Minter = () => {
     return (
-        <div className="wrapper fadeInDown">
+        <div className="fadeInDown minter">
             <h2>Mint NFT</h2>
-            <div className="minter">
+            <div>
                 <label>Recipient's Address</label>
                 <input /> <br />
                 <label>No of NFTs</label>
                 <input /><br />
+                <button className="confirm-text">Confirm</button>
             </div>
-            <button className="confirm-text">Confirm</button>
         </div>
     );
 }
