@@ -59,3 +59,8 @@ TBA
 npm start
 ```
 - The application will open up in your browser.
+
+## Usage
+
+- Connect to metamask using the "connect wallet" button.
+- Once an address is connected, you can fill in the appropriate form fields, including the number of NFTs to be minted.
