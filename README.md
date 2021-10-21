@@ -66,3 +66,8 @@ npm start
 - Once an address is connected, you can fill in the appropriate form fields, including the number of NFTs to be minted.
 - Metamask would prompt you to sign the transaction off and to pay the application gas fees.
 - Your NFTs would be minted and same could be confirmed on the recipient account or on any Ethereum block explorer.
+
+## Tests
+
+### React components unit testing
+
