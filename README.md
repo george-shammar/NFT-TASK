@@ -22,3 +22,15 @@ TBD
 - jest
 - Chai
 - Web3
+
+## Getting Started
+
+To run a local version of this application, follow the steps below:
+
+- Go to the "Code" section of this repository and press the green button that says "Code". Copy the URL or the SSH key.
+- Go to the terminal and enter:
+```
+git clone URL/SSH key
+```
+
+The URL or SSH are the links copied from the step above.
