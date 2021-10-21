@@ -11,7 +11,7 @@ const Minter = () => {
                 </div>
                 <div className="flex">
                     <label className="color font">No of NFTs:</label>
-                    <input className="input" type="number"/>
+                    <input className="input" type="number" required/>
                 </div>
               
                     <button className="confirm-text">Confirm</button>
