@@ -79,3 +79,11 @@ npm test
 ### Smart contract unit testing
 
 TBA
+
+## Developer
+
+👤 **George Gbenle**
+
+- GitHub: [george-shammar](https://github.com/george-shammar)
+- Twitter: [@GeorgeShammar](https://twitter.com/GeorgeShammar)
+- LinkedIn: [George Gbenle](https://www.linkedin.com/in/georgegbenle/)
