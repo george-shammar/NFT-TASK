@@ -11,3 +11,14 @@ The frontend uses minimal design and users can connect to their metamask wallet 
 
 ## Live Demo
 TBD
+
+## Built With
+- Soilidity
+- Typescript
+- Hardhat
+- React
+- HTML5
+- CSS3
+- jest
+- Chai
+- Web3
