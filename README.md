@@ -46,7 +46,7 @@ Directory is the name of your folder.
 ```
 npm install
 ```
-This command installs all the dependencies of the application. Once you complete all installations successfully, you're ready to use the application.
+This command installs all the dependencies of the application.
 
 ## Smart contract and Hardhat
 TBA
