@@ -71,3 +71,11 @@ npm start
 
 ### React components unit testing
 
+- To run the tests, in the command line interface, type 
+```
+npm test
+```
+
+### Smart contract unit testing
+
+TBA
