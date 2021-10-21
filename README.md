@@ -92,3 +92,6 @@ TBA
 
 Contributions, issues and feature requests are welcome!
 
+## 📝 License
+TBA
+
