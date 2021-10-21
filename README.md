@@ -88,3 +88,7 @@ TBA
 - Twitter: [@GeorgeShammar](https://twitter.com/GeorgeShammar)
 - LinkedIn: [George Gbenle](https://www.linkedin.com/in/georgegbenle/)
 
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
