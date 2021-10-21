@@ -4,7 +4,7 @@ const Minter = () => {
     return (
         <div className="fadeInDown minter">
             <h2>Mint NFT</h2>
-            <div className="formContent">
+            <form className="formContent">
                 <div className="flex">
                     <label className="color font">Recipient's Address:</label>
                     <input className="input" type="text"/>
@@ -16,7 +16,7 @@ const Minter = () => {
               
                     <button className="confirm-text">Confirm</button>
             
-            </div>
+            </form>
         </div>
     );
 }
