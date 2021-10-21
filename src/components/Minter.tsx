@@ -13,8 +13,14 @@ const Minter = () => {
                     <label className="color font">No of NFTs:</label>
                     <input className="input" type="number" required/>
                 </div>
-                <label className="color font">Name of NFT:</label>
-                <input className="input" type="number" required/>
+                <div className="flex">
+                    <label className="color font">Name of NFT:</label>
+                    <input className="input" type="text" required/>
+                </div>
+                <div className="flex">
+                    <label className="color font">Description</label>
+                    <input className="input" type="textarea" required/>
+                </div>
               
                     <button className="confirm-text">Confirm</button>
             
