@@ -22,7 +22,7 @@ const Minter = () => {
                     <input className="input" type="textarea" required/>
                 </div>
               
-                    <button className="confirm-text">Confirm</button>
+                <button className="confirm-text">Confirm</button>
             
             </form>
         </div>
