@@ -42,3 +42,9 @@ cd directory
 ```
 Directory is the name of your folder.
 
+- Once you have the local copy in your desired folder, go back to your terminal and run:
+```
+npm install
+```
+This command installs all the dependencies of the application. Once you complete all installations successfully, you're ready to use the application.
+
