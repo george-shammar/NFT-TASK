@@ -51,3 +51,11 @@ This command installs all the dependencies of the application.
 ## Smart contract and Hardhat
 TBA
 
+
+
+
+- To start using the application, run:
+```
+npm start
+```
+- The application will open up in your browser.
