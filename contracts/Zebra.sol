@@ -10,5 +10,7 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 
 contract Zebra is ERC721, Pausable, Ownable {
 
+    constructor()ERC721("Zebra", "ZBR"){
 
+    }
 }
