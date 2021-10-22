@@ -19,6 +19,6 @@ contract Zebra is ERC721URIStorage, Pausable, Ownable {
     }
 
     function createToken(string memory tokenURI) public returns (uint) {
-        
+        uint256 newItemId = _tokenIds.current();
     }
 }
