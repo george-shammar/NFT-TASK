@@ -21,6 +21,10 @@ const Minter = () => {
                     <label className="color font">Description</label>
                     <input className="input" type="textarea" required/>
                 </div>
+                <div className="flex">
+                    <label className="color font">Image: </label>
+                    <input className="input" type="file" required/>
+                </div>
               
                 <button className="confirm-text">Confirm</button>
             
