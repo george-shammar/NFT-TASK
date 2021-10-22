@@ -13,7 +13,12 @@ contract Zebra is ERC721URIStorage, Pausable, Ownable {
 
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
+
     constructor()ERC721("Zebra", "ZBR"){
 
+    }
+
+    function createToken(string memory tokenURI) public returns (uint) {
+        
     }
 }
