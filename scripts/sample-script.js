@@ -15,11 +15,11 @@ async function main() {
 
   // We get the contract to deploy
   const Zebra = await hre.ethers.getContractFactory("Zebra");
-  const zebra = await Greeter.deploy();
+  const zebra = await Zebra.deploy();
 
   await zebra.deployed();
 
-  console.log("Zebra deployed to:", greeter.address);
+  console.log("Zebra deployed to:", zebra.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
