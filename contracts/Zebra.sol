@@ -28,4 +28,12 @@ contract Zebra is ERC721URIStorage, Pausable, Ownable {
             _tokenIds.increment();
         }
     }
+
+    function pause() public onlyOwner {
+        _pause();
+    }
+
+    function unpause() public onlyOwner {
+        _unpause();
+    }
 }
