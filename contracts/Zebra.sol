@@ -12,6 +12,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 contract Zebra is ERC721URIStorage, Pausable, Ownable {
 
     using Counters for Counters.Counter;
+    Counters.Counter private _tokenIds;
     constructor()ERC721("Zebra", "ZBR"){
 
     }
