@@ -1,7 +1,7 @@
 import { ethers } from "ethers";
 // import Web3Modal from "web3modal";
 import { useState } from "react";
-import { contractAddress } from "../contracts/contract-address";
+// import { contractAddress } from "../contracts/contract-address";
 import { ZebraArtifact } from "../contracts/Zebra";
 import "../styles/minter.css";
 // const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
