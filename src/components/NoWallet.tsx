@@ -2,12 +2,12 @@ import "../styles/Nav.css"
 
 export const NoWallet = () => {
     return (
-      <div>
-        <div>
+        <div className="nav">
+        <h1 className="title">Zebra</h1>
+        <p>No Ethereum wallet was detected.</p>
           <div className="wallet">
             <p className="text">
-              No Ethereum wallet was detected. <br />
-              Please install{" "}
+              Install{" "}
               <a
                 href="http://metamask.io"
                 target="_blank"
@@ -15,10 +15,8 @@ export const NoWallet = () => {
               >
                 MetaMask
               </a>
-              .
             </p>
           </div>
         </div>
-      </div>
     );
   }

@@ -45,7 +45,7 @@ const Nav = () => {
 
     return (
         <div className="nav">
-        <h1 className="title">task</h1>
+        <h1 className="title">Zebra</h1>
 
         <div className="wallet">    
           {walletAddress.length > 0 ? (
