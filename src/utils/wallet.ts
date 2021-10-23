@@ -7,20 +7,17 @@ export const connectWallet = async () => {
               method: "eth_requestAccounts",
             });
             const obj = {
-              status: "Connected",
               address: addressArray[0],
             };
             return obj;
           } catch (err) {
             return {
               address: "",
-              status: err,
             };
           }
     } else {
         return {
           address: "",
-          status: ""
         };
       }
 }
@@ -36,24 +33,20 @@ export const getCurrentWalletConnected = async () => {
         if (addressArray.length > 0) {
           return {
             address: addressArray[0],
-            status: "Connected",
           };
         } else {
           return {
             address: "",
-            status: "Connect to Metamask",
           };
         }
       } catch (err) {
         return {
           address: "",
-          status: err,
         };
       }
     } else {
       return {
         address: "",
-        status: ""
       };
     }
   }
