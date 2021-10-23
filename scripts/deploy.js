@@ -16,7 +16,7 @@ async function main() {
 
   function saveFrontendFiles(zebra) {
     const fs = require("fs");
-    const contractsDir = __dirname + "../src/contracts";
+    const contractsDir = __dirname + "/../src/contracts";
   
     if (!fs.existsSync(contractsDir)) {
       fs.mkdirSync(contractsDir);
