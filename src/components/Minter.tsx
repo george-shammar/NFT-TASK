@@ -13,12 +13,17 @@ const Minter = () => {
         const provider = new ethers.providers.Web3Provider(connection);
 
         const signer = provider.getSigner();
+        // @ts-ignore
+        const contract = new ethers.Contract(contractAddress, contractAbi, signer);
+        const transaction = await contract.createToken();
+
+        await transaction.wait();
     }
 
     return (
         <div className="fadeInDown minter">
             <h2>Mint NFT</h2>
-            <form className="formContent">
+            <div className="formContent">
                 <div className="flex">
                     <label className="color font">No of NFTs:</label>
                     <input className="input" type="number" required/>
@@ -36,9 +41,9 @@ const Minter = () => {
                     <input className="input" type="file" required/>
                 </div>
               
-                <button className="confirm-text">Confirm</button>
+                <button className="confirm-text" onSubmit={mintZebra}>Confirm</button>
             
-            </form>
+            </div>
         </div>
     );
 }
