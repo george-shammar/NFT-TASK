@@ -1,3 +1,5 @@
+import "../styles/Nav.css"
+
 export const NoWallet = () => {
     return (
       <div>
