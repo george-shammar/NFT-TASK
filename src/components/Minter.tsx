@@ -1,24 +1,47 @@
 import { ethers } from "ethers";
 import Web3Modal from "web3modal";
-import contractAddress from "../contracts/contract-address.json";
-import contractAbi from "../contracts/Zebra.json";
-
+import { useState } from "react";
+// import contractAddress from "../contracts/contract-address.json";
+import { ZebraArtifact } from "../contracts/Zebra";
 import "../styles/minter.css";
+const contractAddress = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512";
+
+const ERROR_CODE_TX_REJECTED_BY_USER = 4001;
 
 const Minter = () => {
 
-    async function mintZebra() {
+    async function mintZebra(uri, no) {
+        
         const web3Modal = new Web3Modal();
         const connection = await web3Modal.connect();
+       
         const provider = new ethers.providers.Web3Provider(connection);
 
         const signer = provider.getSigner();
-        // @ts-ignore
-        const contract = new ethers.Contract(contractAddress, contractAbi, signer);
-        const transaction = await contract.createToken();
+        
+        const contract = new ethers.Contract(contractAddress, ZebraArtifact.abi, signer);
+        console.log("called");
 
-        await transaction.wait();
+        try {
+            const transaction = await contract.createToken(uri, no);
+            const receipt = await transaction.wait();
+            
+            if (receipt.status === 0) {
+                throw new Error("Transaction failed");
+            }
+        } catch (error) {
+            if (error.code === ERROR_CODE_TX_REJECTED_BY_USER) {
+              return;
+            }
+            console.error(error);
+          } finally {
+                console.log("Nothing");
+          }
     }
+
+    // const mint = () => {
+    //     console.log("called");
+    // }
 
     return (
         <div className="fadeInDown minter">
@@ -40,8 +63,8 @@ const Minter = () => {
                     <label className="color font">Image: </label>
                     <input className="input" type="file" required/>
                 </div>
-              
-                <button className="confirm-text" onSubmit={mintZebra}>Confirm</button>
+                {/* @ts-ignore */}
+                <button className="confirm-text" onClick={mintZebra}>Confirm</button> 
             
             </div>
         </div>
