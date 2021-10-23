@@ -1,4 +1,4 @@
-export function NoWalletDetected() {
+export const NoWalletDetected = () => {
     return (
       <div>
         <div>
