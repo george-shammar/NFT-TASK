@@ -9,6 +9,9 @@ async function main() {
     const zebra = await Zebra.deploy();
   
     console.log("Zebra address:", zebra.address);
+
+    //  To save the contract's artifacts and address in the frontend directory
+    saveFrontendFiles(zebra);
   }
   
   main()
