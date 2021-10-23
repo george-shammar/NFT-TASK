@@ -8,7 +8,7 @@ import "../styles/minter.css";
 const Minter = () => {
 
     async function mintZebra() {
-        
+        const web3Modal = new Web3Modal();
     }
 
     return (
