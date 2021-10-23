@@ -12,8 +12,6 @@ const Minter = () => {
     const [formInput, updateFormInput] = useState({uri:"", no:""});
 
     async function mintZebra(uri, no) {
-        uri = "https://codedli.com";
-        no = 2;
         // const web3Modal = new Web3Modal();
         // const connection = await web3Modal.connect();
        
