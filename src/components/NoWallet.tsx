@@ -1,4 +1,4 @@
-export const NoWalletDetected = () => {
+export const NoWallet = () => {
     return (
       <div>
         <div>

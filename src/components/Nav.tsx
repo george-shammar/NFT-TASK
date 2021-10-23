@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { connectWallet, getCurrentWalletConnected } from "../utils/wallet";
+import { NoWallet } from "./NoWallet";
 import "../styles/Nav.css"
 
 declare const window: any;
