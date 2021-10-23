@@ -9,6 +9,7 @@ const Minter = () => {
 
     async function mintZebra() {
         const web3Modal = new Web3Modal();
+        const connection = await web3Modal.connect();
     }
 
     return (
