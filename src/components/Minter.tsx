@@ -41,10 +41,6 @@ const Minter = () => {
           }
     }
 
-    // const mint = () => {
-    //     console.log("called");
-    // }
-
     return (
         <div className="fadeInDown minter">
             <h2>Mint NFT</h2>
