@@ -1,3 +1,4 @@
+import contractAddress from "../contracts/contract-address.json";
 import "../styles/minter.css";
 
 const Minter = () => {
@@ -5,10 +6,6 @@ const Minter = () => {
         <div className="fadeInDown minter">
             <h2>Mint NFT</h2>
             <form className="formContent">
-                <div className="flex">
-                    <label className="color font">Recipient's Address:</label>
-                    <input className="input" type="text" required/>
-                </div>
                 <div className="flex">
                     <label className="color font">No of NFTs:</label>
                     <input className="input" type="number" required/>
