@@ -6,6 +6,11 @@ import contractAbi from "../contracts/Zebra.json";
 import "../styles/minter.css";
 
 const Minter = () => {
+
+    async function mintZebra() {
+        
+    }
+
     return (
         <div className="fadeInDown minter">
             <h2>Mint NFT</h2>
