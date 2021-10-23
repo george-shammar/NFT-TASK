@@ -6,13 +6,11 @@ declare const window: any;
 
 const Nav = () => {
     const [walletAddress, setWallet] = useState("");
-    const [status, setStatus] = useState("");
 
     useEffect(() => {
       (async() => {
-        const {address, status} = await getCurrentWalletConnected();
+        const {address} = await getCurrentWalletConnected();
         setWallet(address)
-        setStatus(status);
     
         addWalletListener();
       }) ()
@@ -21,7 +19,6 @@ const Nav = () => {
     // connect wallet 
     const connectWalletPressed = async () => {
         const walletResponse = await connectWallet();
-        setStatus(walletResponse.status);
         setWallet(walletResponse.address);
     };
 
@@ -32,15 +29,12 @@ const Nav = () => {
         window.ethereum.on("accountsChanged", (accounts: string | any[]) => {
             if (accounts.length > 0) {
             setWallet(accounts[0]);
-            setStatus("Connected");
+          
             } else {
             setWallet("");
-            setStatus("🦊 Connect to Metamask");
             }
         });
-        } else {
-        setStatus("Install metamask");
-        }
+        } 
     }
 
     return (
