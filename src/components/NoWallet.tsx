@@ -4,8 +4,8 @@ export const NoWallet = () => {
     return (
       <div>
         <div>
-          <div>
-            <p>
+          <div className="wallet">
+            <p className="text">
               No Ethereum wallet was detected. <br />
               Please install{" "}
               <a
