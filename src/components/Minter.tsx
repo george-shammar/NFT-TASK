@@ -4,7 +4,7 @@ import { useState } from "react";
 // import { contractAddress } from "../contracts/contract-address";
 import { ZebraArtifact } from "../contracts/Zebra";
 import "../styles/minter.css";
-// const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
 
 const ERROR_CODE_TX_REJECTED_BY_USER = 4001;
 declare let window:any;
