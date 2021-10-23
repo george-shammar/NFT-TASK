@@ -59,7 +59,7 @@ const Minter = () => {
                     <label className="color font">Image: </label>
                     <input className="input" type="file" required/>
                 </div>
-                {/* @ts-ignore */}
+                
                 <button className="confirm-text" onClick={mintZebra}>Confirm</button> 
             
             </div>
