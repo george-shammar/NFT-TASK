@@ -1,4 +1,6 @@
 import contractAddress from "../contracts/contract-address.json";
+import contractAbi from "../contracts/Zebra.json";
+
 import "../styles/minter.css";
 
 const Minter = () => {
