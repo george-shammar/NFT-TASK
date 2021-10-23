@@ -1,3 +1,4 @@
+import { ethers } from "ethers";
 import contractAddress from "../contracts/contract-address.json";
 import contractAbi from "../contracts/Zebra.json";
 
