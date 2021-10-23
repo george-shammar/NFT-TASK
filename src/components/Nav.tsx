@@ -38,6 +38,11 @@ const Nav = () => {
         } 
     }
 
+    // If window.ethereum has not been injected.
+    if (window.ethereum === undefined) {
+      return <NoWallet />;
+    }
+
     return (
         <div className="nav">
         <h1 className="title">task</h1>
