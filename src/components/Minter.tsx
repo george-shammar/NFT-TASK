@@ -1,4 +1,5 @@
 import { ethers } from "ethers";
+import Web3Modal from "web3modal";
 import contractAddress from "../contracts/contract-address.json";
 import contractAbi from "../contracts/Zebra.json";
 
