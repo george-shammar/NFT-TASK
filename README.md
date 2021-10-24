@@ -25,7 +25,7 @@ To run a local copy of this application, follow the steps below:
 - Go to the "Code" section of this repository and press the green button that says "Code". Copy the URL or the SSH key.
 - Go to the terminal and enter:
 ```
-git clone URL/SSH key
+git clone https://github.com/george-shammar/NFT-TASK.git
 ```
 
 The URL or SSH are the links copied from the step above.
@@ -41,3 +41,19 @@ Directory is the name of your folder.
 ```
 npm install
 ```
+
+This command installs all the dependencies of the application.
+
+Next, run Hardhat's testing network:
+```
+npx hardhat node
+```
+Then, on a new terminal, go to the repository's root folder and run this to deploy your contract:
+
+```
+npx hardhat run scripts/deploy.js --network localhost
+```
+
+Open http://localhost:3000/ to see the DApp. 
+
+You will need to have Metamask installed and listening to localhost 8545.
