@@ -92,11 +92,13 @@ const Minter = () => {
                         type="file"
                         onChange={onChange}
                         required/>
+                        <div className="preview">
                         {
                             fileUrl && (
-                                <img width="350" src={fileUrl} className="preview" alt=""/>
+                                <img width="350" src={fileUrl} alt=""/>
                             )
                         }
+                        </div>
                 </div>
                 {/*@ts-ignore*/}
                 <button className="confirm-text" onClick={mintZebra}>Mint Asset</button> 
