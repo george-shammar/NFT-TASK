@@ -57,3 +57,8 @@ npx hardhat run scripts/deploy.js --network localhost
 Open http://localhost:3000/ to see the DApp. 
 
 You will need to have Metamask installed and listening to localhost 8545.
+
+However, to use the Dapp live on the Ropsten testnet, visit the live version below:
+
+## Live Demo
+[Deployed app](https://frosty-carson-9d1a51.netlify.app/)
