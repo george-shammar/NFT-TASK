@@ -31,8 +31,8 @@ const Minter = () => {
         }
     }
 
-    async function mintZebra(url, no) {
-       
+    async function mintZebra(url) {
+       const {no, name, description} = formInput;
       
         const provider = new ethers.providers.Web3Provider(window.ethereum);
 
