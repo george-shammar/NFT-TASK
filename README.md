@@ -65,3 +65,8 @@ However, to use the Dapp live on the Ropsten testnet, visit the live version bel
 
 ## Live Demo
 [Deployed app](https://frosty-carson-9d1a51.netlify.app/)
+
+## Usage
+
+- Upon launching the application, connect to your metamask wallet by chosen an address to connect with.
+- Fill in the minting form on the page with the name, description, number of assets to mint and upload your asset. All fields are mandatory. You'll see a preview of your asset on the page before minting.
