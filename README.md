@@ -81,3 +81,25 @@ However, to use the Dapp live on the Ropsten testnet, visit the live version bel
 npx hardhat test
 ```
 Note: The application relied heavily on openzeppelin's standard libraries, hence the only newly implemented function "createToken" and contract deployment was tested. Openzeppelin's contracts are already well tested.
+
+
+## Developer
+
+👤 **George Gbenle**
+
+- GitHub: [george-shammar](https://github.com/george-shammar)
+- Twitter: [@GeorgeShammar](https://twitter.com/GeorgeShammar)
+- LinkedIn: [George Gbenle](https://www.linkedin.com/in/georgegbenle/)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+
+## 📝 License
+
+This project is MIT licensed.
