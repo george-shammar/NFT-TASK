@@ -40,3 +40,32 @@
    padding-top: 5px;
    padding-bottom: 5px;
 }
+
+.no-wallet {
+    display: none;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .wallet {
+      display: none;
+  }
+
+  .no-wallet-desktop {
+      display: none;
+  }
+
+  .no-wallet {
+      display: block;
+      padding-left: 5%;
+      padding-right: 5%;
+  }
+
+  .mobile {
+    display: block;
+    cursor: pointer;
+  }
+}

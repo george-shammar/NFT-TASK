@@ -46,8 +46,8 @@ const Nav = () => {
     return (
         <div className="nav">
         <h1 className="title">ZebraMint</h1>
-
-        <div className="wallet">    
+        <i className="fas mobile fa-bars" />   
+        <div className="wallet">
           {walletAddress.length > 0 ? (
             <div className="text">Connected:   
               {String(walletAddress).substring(0, 6) +
