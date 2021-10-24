@@ -1,14 +1,12 @@
 import { useEffect, useState } from "react";
 import { connectWallet, getCurrentWalletConnected } from "../utils/wallet";
 import { NoWallet } from "./NoWallet";
-import { Hamburger } from "./Hamburger";
 import "../styles/Nav.css";
 
 declare const window: any;
 
 const Nav = () => {
     const [walletAddress, setWallet] = useState("");
-    const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
     useEffect(() => {
       (async() => {
@@ -48,7 +46,7 @@ const Nav = () => {
     return (
         <div className="nav">
         <h1 className="title">ZebraMint</h1>
-         
+       
         <div className="wallet">
           {walletAddress.length > 0 ? (
             <div className="text">Connected:   
@@ -60,7 +58,7 @@ const Nav = () => {
           <div className="text" onClick={connectWalletPressed}>Connect Wallet</div>
             )}
         </div>
-        <Hamburger />
+        <i className="fas mobile fa-bars" />
     </div>
     );
 }
