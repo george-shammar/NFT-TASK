@@ -1,11 +1,10 @@
 import { ethers } from "ethers";
 import { useState } from "react";
 import { create as ipfsHttpClient } from "ipfs-http-client";
-// import { contractAddress } from "../contracts/contract-address";
-import { ZebraArtifact } from "../contracts/Zebra";
+import contractAddress from "../contracts/contract-address.json";
+import ZebraArtifact from "../contracts/Zebra.json";
 import "../styles/minter.css";
 
-const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
 
 const ERROR_CODE_TX_REJECTED_BY_USER = 4001;
 // @ts-ignore
@@ -41,16 +40,13 @@ const Minter = () => {
         const provider = new ethers.providers.Web3Provider(window.ethereum);
 
         const signer = provider.getSigner();
-        
-        const contract = new ethers.Contract(contractAddress, ZebraArtifact.abi, signer);
-        console.log("called");
+        const contract = new ethers.Contract(contractAddress.Zebra, ZebraArtifact.abi, signer);
 
         try {
             const added = await client.add(data);
             const url = `https://ipfs.infura.io/ipfs/${added.path}`
             const transaction = await contract.createToken(url, no);
             const receipt = await transaction.wait();
-            console.log("Successful");
             if (receipt.status === 0) {
                 throw new Error("Transaction failed");
             }
@@ -60,7 +56,7 @@ const Minter = () => {
             }
             console.error(error);
           } finally {
-                console.log("No error");
+
           }
     }
 

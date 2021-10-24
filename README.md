@@ -1,6 +1,6 @@
 # ZEBRA NFT
 
-- This is a simple DApp that allow users to mint their own NFT. Users can mint multpile NFTs at once. Minted assets are dynamically stored on IPFS. The DApp is deployed on the Ropsten Test Network.
+- This is a simple DApp that allow users to mint their own NFT. Users can mint multiple NFTs at once. Minted assets are dynamically stored on IPFS. The DApp is deployed on the Ropsten Test Network.
 
 
 ## Live Demo
@@ -44,7 +44,7 @@ npm install
 
 This command installs all the dependencies of the application.
 
-Next, run Hardhat's testing network:
+Next, run Hardhat's testing network in the CLI:
 ```
 npx hardhat node
 ```
@@ -54,7 +54,7 @@ Then, on a new terminal, go to the repository's root folder and run this to depl
 npx hardhat run scripts/deploy.js --network localhost
 ```
 
-To use the application, open http://localhost:3000/ or use the command below:
+To use the application, open http://localhost:3000/ or use the command below in your terminal:
 
 ```npm start
 ```
