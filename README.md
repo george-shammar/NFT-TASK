@@ -54,7 +54,10 @@ Then, on a new terminal, go to the repository's root folder and run this to depl
 npx hardhat run scripts/deploy.js --network localhost
 ```
 
-Open http://localhost:3000/ to see the DApp. 
+To use the application, open http://localhost:3000/ or use the command below:
+
+```npm start
+```
 
 You will need to have Metamask installed and listening to localhost 8545.
 
