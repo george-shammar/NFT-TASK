@@ -12,7 +12,7 @@ const ERROR_CODE_TX_REJECTED_BY_USER = 4001;
 const client = ipfsHttpClient(':https://ipfs.infura.io:5001/api/v0');
 declare let window:any;
 const Minter = () => {
-    const [formInput, updateFormInput] = useState({no:"", url:"",  name:"", description:""});
+    const [formInput, updateFormInput] = useState({no:"",  name:"", description:""});
     const [fileUrl, setFileUrl] = useState(null);
 
     async function onChange(e) {
@@ -31,8 +31,12 @@ const Minter = () => {
         }
     }
 
-    async function mintZebra(url) {
+    async function mintZebra() {
        const {no, name, description} = formInput;
+       if (!no || !name || !description || !fileUrl) return
+       const data = JSON.stringify({
+           name, description, image: fileUrl
+       })
       
         const provider = new ethers.providers.Web3Provider(window.ethereum);
 
@@ -42,6 +46,8 @@ const Minter = () => {
         console.log("called");
 
         try {
+            const added = await client.add(data);
+            const url = `https://ipfs.infura.io/ipfs/${added.path}`
             const transaction = await contract.createToken(url, no);
             const receipt = await transaction.wait();
             console.log("Successful");
@@ -54,7 +60,7 @@ const Minter = () => {
             }
             console.error(error);
           } finally {
-                console.log("Nothing");
+                console.log("No error");
           }
     }
 
