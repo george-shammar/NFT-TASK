@@ -25,6 +25,7 @@ const Minter = () => {
             )
             const url = `https://ipfs.infura.io/ipfs/${added.path}`
             setFileUrl(url);
+            console.log(url);
         } catch (e) {
             console.log(e);
         }
