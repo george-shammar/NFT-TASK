@@ -68,5 +68,16 @@ However, to use the Dapp live on the Ropsten testnet, visit the live version bel
 
 ## Usage
 
-- Upon launching the application, connect to your metamask wallet by chosen an address to connect with.
+- Upon launching the application, connect to your metamask wallet by choosing an address to connect with.
 - Fill in the minting form on the page with the name, description, number of assets to mint and upload your asset. All fields are mandatory. You'll see a preview of your asset on the page before minting.
+- Confirm your minting and sign off the transaction on metamask by paying the gas fee.
+- Confirm your minted asset through any of the available means. Check out the transaction on etherscan.
+
+## Tests
+
+- For smart contract tests, run the tests in the command line interface, type:
+
+```
+npx hardhat test
+```
+Note: The application relied heavily on openzeppelin's standard libraries, hence the only newly implemented function "createToken" and contract deployment was tested. Openzeppelin's contracts are already well tested.
