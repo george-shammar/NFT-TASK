@@ -74,12 +74,17 @@ const Minter = () => {
                 </div>
                 <div className="flex">
                     <label className="color font">Name of NFT:</label>
-                    <input className="input" type="text" onChange={e => updateFormInput({...formInput, name: e.target.value})} 
-                    required/>
+                    <input className="input" 
+                        type="text" 
+                        onChange={e => updateFormInput({...formInput, name: e.target.value})} 
+                        required/>
                 </div>
                 <div className="flex">
                     <label className="color font">Description</label>
-                    <input className="input" type="textarea" required/>
+                    <input className="input" 
+                        type="textarea" 
+                        onChange={e => updateFormInput({...formInput, description: e.target.value})}
+                        required/>
                 </div>
                 <div className="flex">
                     <label className="color font">Image: </label>
