@@ -95,6 +95,11 @@ const Minter = () => {
                         type="file"
                         onChange={onChange}
                         required/>
+                        {
+                            fileUrl && (
+                                <img width="350" src={fileUrl} alt=""/>
+                            )
+                        }
                 </div>
                 {/*@ts-ignore*/}
                 <button className="confirm-text" onClick={mintZebra}>Mint Asset</button> 
