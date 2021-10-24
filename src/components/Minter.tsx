@@ -1,5 +1,4 @@
 import { ethers } from "ethers";
-// import Web3Modal from "web3modal";
 import { useState } from "react";
 import { create as ipfsHttpClient } from "ipfs-http-client";
 // import { contractAddress } from "../contracts/contract-address";
@@ -33,8 +32,7 @@ const Minter = () => {
     }
 
     async function mintZebra(url, no) {
-        // const web3Modal = new Web3Modal();
-        // const connection = await web3Modal.connect();
+       
       
         const provider = new ethers.providers.Web3Provider(window.ethereum);
 
