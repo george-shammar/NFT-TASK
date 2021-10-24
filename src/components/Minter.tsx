@@ -92,10 +92,10 @@ const Minter = () => {
                         type="file"
                         onChange={onChange}
                         required/>
-                        <div className="preview">
+                        <div>
                         {
                             fileUrl && (
-                                <img width="350" src={fileUrl} alt=""/>
+                                <img className="preview" src={fileUrl} alt=""/>
                             )
                         }
                         </div>
