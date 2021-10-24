@@ -1,4 +1,6 @@
+# ZEBRA NFT
 
+- This is a simple DApp that allow users to mint their own NFT. 
 
 
 ## Live Demo
