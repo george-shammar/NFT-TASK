@@ -4,9 +4,11 @@ import { useState } from "react";
 // import { contractAddress } from "../contracts/contract-address";
 import { ZebraArtifact } from "../contracts/Zebra";
 import "../styles/minter.css";
+
 const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
 
 const ERROR_CODE_TX_REJECTED_BY_USER = 4001;
+const client
 declare let window:any;
 const Minter = () => {
     const [formInput, updateFormInput] = useState({no:"", url:"",  name:"", description:""});
@@ -14,6 +16,16 @@ const Minter = () => {
 
     async function onChange(e) {
         const file = e.target.files[0];
+        try {
+            const added = await client.add(
+                file,
+                {
+                    progress: (prog) => console.log(`received: ${prog}`);
+                }
+            )
+        } catch (e) {
+            console.log(e);
+        }
     }
 
     async function mintZebra(url, no) {
