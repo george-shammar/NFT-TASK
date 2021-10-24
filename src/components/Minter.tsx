@@ -14,8 +14,7 @@ const Minter = () => {
     async function mintZebra(uri, no) {
         // const web3Modal = new Web3Modal();
         // const connection = await web3Modal.connect();
-       uri = "https";
-       no =  3;
+      
         const provider = new ethers.providers.Web3Provider(window.ethereum);
 
         const signer = provider.getSigner();
