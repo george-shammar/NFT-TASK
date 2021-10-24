@@ -1,6 +1,7 @@
 import { ethers } from "ethers";
 // import Web3Modal from "web3modal";
 import { useState } from "react";
+import { create as ipfsHttpClient } from "ipfs-http-client";
 // import { contractAddress } from "../contracts/contract-address";
 import { ZebraArtifact } from "../contracts/Zebra";
 import "../styles/minter.css";
