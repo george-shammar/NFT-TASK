@@ -30,12 +30,9 @@
     width: 50%;
 }
 
-.color {
-    color: rgb(53, 240, 209);
-}
-
-.font {
-    font-weight: bold;
+.preview {
+  padding-top: 35px;
+  text-align: center;
 }
 
 .confirm-text:hover{

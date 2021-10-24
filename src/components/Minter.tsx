@@ -65,36 +65,36 @@ const Minter = () => {
         <div className="fadeInDown minter">
             <h2>Mint NFT</h2>
             <div className="formContent">
+                
                 <div className="flex">
-                    <label className="color font">No of NFTs:</label>
-                    <input className="input" 
-                        type="number" 
-                        onChange={e => updateFormInput({...formInput, no: e.target.value})}
-                        required/>
-                </div>
-                <div className="flex">
-                    <label className="color font">Name of NFT:</label>
                     <input className="input" 
                         type="text" 
                         onChange={e => updateFormInput({...formInput, name: e.target.value})} 
+                        placeholder="Name your Asset..."
                         required/>
                 </div>
                 <div className="flex">
-                    <label className="color font">Description</label>
                     <input className="input" 
                         type="textarea" 
                         onChange={e => updateFormInput({...formInput, description: e.target.value})}
+                        placeholder="Description..."
                         required/>
                 </div>
                 <div className="flex">
-                    <label className="color font">Image: </label>
+                    <input className="input" 
+                        type="number" 
+                        onChange={e => updateFormInput({...formInput, no: e.target.value})}
+                        placeholder="Number to be minted.."
+                        required/>
+                </div>
+                <div className="flex">
                     <input className="input" 
                         type="file"
                         onChange={onChange}
                         required/>
                         {
                             fileUrl && (
-                                <img width="350" src={fileUrl} alt=""/>
+                                <img width="350" src={fileUrl} className="preview" alt=""/>
                             )
                         }
                 </div>
