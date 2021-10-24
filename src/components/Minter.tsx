@@ -9,6 +9,7 @@ import "../styles/minter.css";
 const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
 
 const ERROR_CODE_TX_REJECTED_BY_USER = 4001;
+// @ts-ignore
 const client = ipfsHttpClient(':https://ipfs.infura.io:5001/api/v0');
 declare let window:any;
 const Minter = () => {
@@ -21,7 +22,7 @@ const Minter = () => {
             const added = await client.add(
                 file,
                 {
-                    progress: (prog) => console.log(`received: ${prog}`);
+                    progress: (prog) => console.log(`received: ${prog}`)
                 }
             )
         } catch (e) {
