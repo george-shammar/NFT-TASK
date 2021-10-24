@@ -9,7 +9,7 @@ const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
 const ERROR_CODE_TX_REJECTED_BY_USER = 4001;
 declare let window:any;
 const Minter = () => {
-    const [formInput, updateFormInput] = useState({uri:"", no:""});
+    const [formInput, updateFormInput] = useState({no:"", url:"",  name:"", description:""});
     const [fileUrl, setFileUrl] = useState(null);
 
     async function mintZebra(url, no) {
