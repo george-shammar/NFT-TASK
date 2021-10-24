@@ -12,6 +12,10 @@ const Minter = () => {
     const [formInput, updateFormInput] = useState({no:"", url:"",  name:"", description:""});
     const [fileUrl, setFileUrl] = useState(null);
 
+    async function onChange(e) {
+        const file = e.target.files[0];
+    }
+
     async function mintZebra(url, no) {
         // const web3Modal = new Web3Modal();
         // const connection = await web3Modal.connect();
