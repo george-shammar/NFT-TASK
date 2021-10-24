@@ -2,6 +2,8 @@
 
 - This is a simple DApp that allow users to mint their own NFT. Users can mint multiple NFTs at once. Minted assets are dynamically stored on IPFS. The DApp is deployed on the Ropsten Test Network.
 
+## Home
+![screenShot](./src/image/screenshot.png)
 
 ## Live Demo
 [Deployed app](https://frosty-carson-9d1a51.netlify.app/)
