@@ -25,6 +25,8 @@ const Minter = () => {
                     progress: (prog) => console.log(`received: ${prog}`)
                 }
             )
+            const url = `https://ipfs.infura.io/ipfs/${added.path}`
+            setFileUrl(url);
         } catch (e) {
             console.log(e);
         }
