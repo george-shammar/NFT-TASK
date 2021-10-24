@@ -11,6 +11,9 @@
 - React
 - TYpescript
 - Hardhat
+- Ethers
+- IPFS
+- Infura
 - Tested with Chai
 - HTML5
 - CSS3
