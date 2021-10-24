@@ -10,8 +10,9 @@ const ERROR_CODE_TX_REJECTED_BY_USER = 4001;
 declare let window:any;
 const Minter = () => {
     const [formInput, updateFormInput] = useState({uri:"", no:""});
+    const [fileUrl, setFileUrl] = useState(null);
 
-    async function mintZebra(uri, no) {
+    async function mintZebra(url, no) {
         // const web3Modal = new Web3Modal();
         // const connection = await web3Modal.connect();
       
@@ -23,7 +24,7 @@ const Minter = () => {
         console.log("called");
 
         try {
-            const transaction = await contract.createToken(uri, no);
+            const transaction = await contract.createToken(url, no);
             const receipt = await transaction.wait();
             console.log("Successful");
             if (receipt.status === 0) {
