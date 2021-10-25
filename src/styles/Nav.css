@@ -56,8 +56,10 @@
 
   .no-wallet {
       display: block;
-      padding-left: 5%;
-      padding-right: 5%;
+      margin-left: 25%;
+      margin-right: 25%;
+      position: relative;
+      text-align: center;
   }
 
   .nav {
@@ -67,7 +69,6 @@
 
   .wallet {
       margin-bottom: 20px;
-      position: relative;
       text-align: center;
       margin-left: 25%;
       margin-right: 25%;
