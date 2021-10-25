@@ -15,7 +15,7 @@
 - Hardhat
 - Ethers
 - IPFS
-- Infura
+- Alchemy
 - Tested with Chai
 - HTML5
 - CSS3
