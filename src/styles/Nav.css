@@ -46,7 +46,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .wallet {
+  .title {
       display: none;
   }
 
@@ -58,5 +58,19 @@
       display: block;
       padding-left: 5%;
       padding-right: 5%;
+  }
+
+  .nav {
+      display: block;
+      align-content: center;
+  }
+
+  .wallet {
+      margin-bottom: 20px;
+      position: relative;
+      text-align: center;
+      margin-left: 25%;
+      margin-right: 25%;
+      
   }
 }
