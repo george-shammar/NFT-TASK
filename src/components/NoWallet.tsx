@@ -4,8 +4,7 @@ export const NoWallet = () => {
     return (
       <div>
         <div className="nav">
-        <h1 className="title">ZebraMint</h1>
-        <i className="fas mobile fa-bars" /> 
+        <h1 className="title">ZebraMint</h1> 
         <p className="no-wallet-desktop">No Ethereum wallet was detected.</p>
           <div className="wallet">
             <p className="text">

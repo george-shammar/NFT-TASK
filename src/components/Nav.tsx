@@ -58,7 +58,6 @@ const Nav = () => {
           <div className="text" onClick={connectWalletPressed}>Connect Wallet</div>
             )}
         </div>
-        <i className="fas mobile fa-bars" />
     </div>
     );
 }
