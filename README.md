@@ -67,7 +67,7 @@ To use the application, open http://localhost:3000/ or use the command below in 
 - You might also need to configure MetaMask to work well with Hardhat. To do that, go to Settings -> Networks -> Localhost 8545 and change the Chain ID input to 31337.
 
  
-##  However, to use the Dapp live on the Ropsten testnet, visit the live version below:
+However, to use the Dapp live on the Ropsten testnet, visit the live version below:
 
 ## Live Demo
 [Deployed app](https://frosty-carson-9d1a51.netlify.app/)
