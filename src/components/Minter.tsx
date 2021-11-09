@@ -35,18 +35,14 @@ const Minter = () => {
         
         const {whitelist} = formInput;
         if (!whitelist) return
-
         let whitelistArray = [];
         whitelistArray.push(whitelist);
-        console.log(whitelistArray);
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const signer = provider.getSigner();
         const contract = new ethers.Contract(contractAddress.Zebra, ZebraArtifact.abi, signer);
-
         try {
             const transaction = await contract.whitelistUsers(whitelistArray);
             const receipt = await transaction.wait();
-            console.log("reached here");
             if (receipt.status === 0) {
                 throw new Error("Whitelisting failed");
             }
