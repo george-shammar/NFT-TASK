@@ -35,7 +35,5 @@ describe("Zebra NFT", () => {
         );
     });
 
-    it("Should switch on whitelistiing of addresses for presale", async () => {
-        
-    })
+    
 });
