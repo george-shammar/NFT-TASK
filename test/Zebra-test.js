@@ -38,6 +38,8 @@ describe("Zebra NFT", () => {
     it("Should mint token properly", async () => {
         [account1] = await ethers.getSigners();
         expect(await zebraContract.balanceOf(account1.address)).to.equal(0);
+        await zebraContract.setOnlyWhitelisted(false);
+        const uri = "https://zebra";
     })
     
 });
