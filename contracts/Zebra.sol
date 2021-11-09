@@ -20,11 +20,11 @@ contract Zebra is ERC721URIStorage, Pausable, Ownable {
 
     uint256 private _price = 500000000000000;
     
-     address[] private whitelistedAddresses;
+    address[] private whitelistedAddresses;
      
-     bool private onlyWhitelisted = true;
+    bool private onlyWhitelisted = true;
      
-     uint256 private nftPerAddressLimit = 20;
+    uint256 private nftPerAddressLimit = 20;
      
      
      

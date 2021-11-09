@@ -24,11 +24,11 @@ describe("Zebra NFT", () => {
         expect(await zebraContract.owner()).to.equal(await owner.address);
     });
 
-    it("Should mint a zebra", async () => {
-        const uri = "https://zebra";
-        expect(await zebraContract.createToken(uri, 2)).to.emit(
-          zebraContract,
-          "Transfer"
-        );
-      });
+    // it("Should mint a zebra", async () => {
+    //     const uri = "https://zebra";
+    //     expect(await zebraContract.createToken(uri, 2)).to.emit(
+    //       zebraContract,
+    //       "Transfer"
+    //     );
+    //   });
 });
