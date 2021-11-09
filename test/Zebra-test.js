@@ -10,6 +10,7 @@ describe("Zebra NFT", () => {
         const ZebraFactory = await ethers.getContractFactory("Zebra");
         [owner, address1] = await ethers.getSigners();
         zebraContract = await ZebraFactory.deploy();
+        
     });
    
     it("Should initialize Zebra contract", async () => {
@@ -24,11 +25,13 @@ describe("Zebra NFT", () => {
         expect(await zebraContract.owner()).to.equal(await owner.address);
     });
 
-    // it("Should mint a zebra", async () => {
-    //     const uri = "https://zebra";
-    //     expect(await zebraContract.createToken(uri, 2)).to.emit(
-    //       zebraContract,
-    //       "Transfer"
-    //     );
-    //   });
+    it("Should mint a zebra", async () => {
+        await zebraContract.setOnlyWhitelisted(false);
+        const uri = "https://zebra";
+        expect(await zebraContract.createToken(uri, 2, {
+            value: zebraContract.getMintingPrice(2)})).to.emit(
+          zebraContract,
+          "Transfer"
+        );
+      });
 });
