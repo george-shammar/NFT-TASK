@@ -35,6 +35,8 @@ describe("Zebra NFT", () => {
         );
     });
 
-    
+    it("Should mint token properly", async () => {
+            
+    })
     
 });
