@@ -40,6 +40,10 @@ describe("Zebra NFT", () => {
         expect(await zebraContract.balanceOf(account1.address)).to.equal(0);
         await zebraContract.setOnlyWhitelisted(false);
         const uri = "https://zebra";
+        const tx = await zebraContract.connect(account1).createToken(uri, 1,
+            {value: zebraContract.getMintingPrice(1)});
+        expect(await zebraContract.balanceOf(account1.address)).to.equal(1);
+
     })
     
 });
