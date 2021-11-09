@@ -44,6 +44,17 @@ describe("Zebra NFT", () => {
             {value: zebraContract.getMintingPrice(1)});
         expect(await zebraContract.balanceOf(account1.address)).to.equal(1);
 
+    });
+
+    it("Should confirm that an address is whitelisted", async () => {
+        [account1] = await ethers.getSigners();
+        const whitelistedAddresses = [];
+        whitelistedAddresses.push(account1.address);
+        await zebraContract.whitelistUsers(whitelistedAddresses);
+        const uri = "https://zebra";
+        const tx = await zebraContract.connect(account1).createToken(uri, 1,
+            {value: zebraContract.getMintingPrice(1)});
+        expect(await zebraContract.balanceOf(account1.address)).to.equal(1);
     })
     
 });
