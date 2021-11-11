@@ -29,7 +29,7 @@ contract Zebra is ERC721URIStorage, Pausable, Ownable {
     @dev Requires minimum number of mintable token to be at least 1.
     */
 
-    function createToken(string memory tokenURI, uint256 _mintAmount) public whenNotPaused {
+    function createToken(string memory tokenURI, uint256 _mintAmount) public payable whenNotPaused {
         require(_mintAmount > 0, "Minimum number of mintable token is 1");
 
         for (uint256 i = 1; i <= _mintAmount; i++) {
