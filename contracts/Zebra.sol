@@ -18,10 +18,14 @@ contract Zebra is ERC721URIStorage, Pausable, Ownable {
     
     Counters.Counter private _tokenIds;
 
-    uint256 private _price = 0.0005 ether;
+    uint256 private _price = 500000000000000;
 
     constructor()ERC721("Zebra", "ZBR"){
 
+    }
+
+    function getMintingPrice(uint256 _mintAmount) public view returns (uint256) {
+        return  _mintAmount *_price;
     }
 
     /**
@@ -31,8 +35,9 @@ contract Zebra is ERC721URIStorage, Pausable, Ownable {
 
     function createToken(string memory tokenURI, uint256 _mintAmount) public payable whenNotPaused {
         require(_mintAmount > 0, "Minimum number of mintable token is 1");
-        require(msg.value == _price, "Please send along 0.0005 ether to complete minting");
-        
+        uint256 _mintingPrice = _price * _mintAmount;
+        require(msg.value == _mintingPrice, "Please send along 0.0005 ether for each NFT to complete minting");
+
         for (uint256 i = 1; i <= _mintAmount; i++) {
             uint256 newItemId = _tokenIds.current();
             _mint(msg.sender, newItemId);

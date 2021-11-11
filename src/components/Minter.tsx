@@ -43,10 +43,14 @@ const Minter = () => {
         const signer = provider.getSigner();
         const contract = new ethers.Contract(contractAddress.Zebra, ZebraArtifact.abi, signer);
 
+        let mintingPrice = await contract.getMintingPrice(no);
+        mintingPrice = mintingPrice.toString();
+
         try {
             const added = await client.add(data);
             const url = `https://ipfs.infura.io/ipfs/${added.path}`
-            const transaction = await contract.createToken(url, no);
+            
+            const transaction = await contract.createToken(url, no, { value: mintingPrice });
             const receipt = await transaction.wait();
             if (receipt.status === 0) {
                 throw new Error("Transaction failed");
