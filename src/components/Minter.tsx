@@ -32,6 +32,7 @@ const Minter = () => {
     }
 
     async function addWhitelist() {
+        
         const {whitelist} = formInput;
         if (!whitelist) return
 
@@ -45,6 +46,7 @@ const Minter = () => {
         try {
             const transaction = await contract.whitelistUsers(whitelistArray);
             const receipt = await transaction.wait();
+            console.log("reached here");
             if (receipt.status === 0) {
                 throw new Error("Whitelisting failed");
             }
@@ -56,7 +58,7 @@ const Minter = () => {
           } finally {
 
           }
-
+         
     }
 
     async function mintZebra() {
