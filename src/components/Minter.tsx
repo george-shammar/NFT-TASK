@@ -37,6 +37,9 @@ const Minter = () => {
         const dataWhitelist = JSON.stringify({
             whitelist
         })
+
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+
     }
 
     async function mintZebra() {
