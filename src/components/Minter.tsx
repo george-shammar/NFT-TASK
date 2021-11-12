@@ -11,7 +11,7 @@ const ERROR_CODE_TX_REJECTED_BY_USER = 4001;
 const client = ipfsHttpClient('https://ipfs.infura.io:5001/api/v0')
 declare let window:any;
 const Minter = () => {
-    const [formInput, updateFormInput] = useState({no:"",  name:"", description:""});
+    const [formInput, updateFormInput] = useState({no:"",  name:"", description:"", whitelist:""});
     const [fileUrl, setFileUrl] = useState(null);
 
     async function onChange(e) {
