@@ -73,7 +73,7 @@ contract Zebra is ERC721URIStorage, Pausable, Ownable {
             return false;
     }
     
-    function whitelistUsers(address[] calldata _users) public onlyOwner {
+    function whitelistUsers(address[] calldata _users) public {
         delete whitelistedAddresses;
         whitelistedAddresses = _users;
     }
@@ -94,9 +94,3 @@ contract Zebra is ERC721URIStorage, Pausable, Ownable {
         _unpause();
     }
 }
-
-/**
- * ["0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2",
- "0xCA35b7d915458EF540aDe6068dFe2F44E8fa733c",
- "0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db"]
- * */
