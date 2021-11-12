@@ -34,11 +34,10 @@ const Minter = () => {
     async function addWhitelist() {
         const {whitelist} = formInput;
         if (!whitelist) return
-        const dataWhitelist = JSON.stringify({
-            whitelist
-        })
 
         const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const signer = provider.getSigner();
+        const contract = new ethers.Contract(contractAddress.Zebra, ZebraArtifact.abi, signer);
 
     }
 
