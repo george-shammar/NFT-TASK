@@ -69,7 +69,12 @@ const Minter = () => {
         <div className="fadeInDown minter">
             <div>
                 <h2>Add To Whitelist</h2>
-                <input placeholder="Add an address to whitelist"></input>
+                <input 
+                    className="input" 
+                    type="text" 
+                    onChange={e => updateFormInput({...formInput, whitelist: e.target.value})} 
+                    placeholder="Add an address to whitelist">
+                </input>
                 <button className="confirm-text">Add</button> 
 
             </div> 
