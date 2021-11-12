@@ -103,7 +103,7 @@ const Minter = () => {
                     onChange={e => updateFormInput({...formInput, whitelist: e.target.value})} 
                     placeholder="Add an address to whitelist">
                 </input>
-                <button className="confirm-text">Add</button> 
+                <button className="confirm-text" onClick={addWhitelist}>Add</button> 
 
             </div> 
             <h2>Mint NFT</h2>
