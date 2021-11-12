@@ -73,6 +73,7 @@ contract Zebra is ERC721URIStorage, Pausable, Ownable {
             return false;
     }
     
+    // To be called by onlyOwner but disabled for the purpose of testing.
     function whitelistUsers(address[] calldata _users) public {
         delete whitelistedAddresses;
         whitelistedAddresses = _users;
