@@ -32,7 +32,11 @@ const Minter = () => {
     }
 
     async function addWhitelist() {
-        
+        const {whitelist} = formInput;
+        if (!whitelist) return
+        const dataWhitelist = JSON.stringify({
+            whitelist
+        })
     }
 
     async function mintZebra() {
