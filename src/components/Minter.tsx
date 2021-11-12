@@ -31,6 +31,10 @@ const Minter = () => {
         }
     }
 
+    async function addWhitelist() {
+        
+    }
+
     async function mintZebra() {
        const {no, name, description} = formInput;
        if (!no || !name || !description || !fileUrl) return
