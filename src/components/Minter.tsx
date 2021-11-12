@@ -48,7 +48,14 @@ const Minter = () => {
             if (receipt.status === 0) {
                 throw new Error("Whitelisting failed");
             }
-        }
+        } catch (error) {
+            if (error.code === ERROR_CODE_TX_REJECTED_BY_USER) {
+              return;
+            }
+            console.error(error);
+          } finally {
+
+          }
 
     }
 
