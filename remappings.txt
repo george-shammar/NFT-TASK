@@ -1,1 +1,2 @@
 openzeppelin-ERC721/=lib/openzeppelin-contracts/contracts/token/ERC721
+openzeppelin-Pausable/=lib/openzeppelin-contracts/security/Pausable
