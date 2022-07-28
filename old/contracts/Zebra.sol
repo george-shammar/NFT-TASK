@@ -9,7 +9,9 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 
-import "openzeppelin-contracts/contracts/access/Ownable.sol";
+import "solmate-utils/Contract.sol";
+import "openzeppelin-token/ERC721.sol";
+
 
 /// @title A basic ERC721 smart contract that allows user to mint multiple tokens at once.  
 /// @dev Inherits standard Openzeppelin's library.
