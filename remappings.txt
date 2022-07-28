@@ -1,5 +1,5 @@
-openzeppelin-token/=lib/openzeppelin-contracts/contracts/token/ERC721
-openzeppelin-Security/=lib/openzeppelin-contracts/security/Pausable
-openzeppelin-Ownable/=lib/openzeppelin-contracts/access/Ownable
+openzeppelin-token/=lib/openzeppelin-contracts/contracts/token/
+openzeppelin-security/=lib/openzeppelin-contracts/security/
+openzeppelin-access/=lib/openzeppelin-contracts/access/
 openzeppelin-Counters/=lib/openzeppelin-contracts/utils/Counters
 openzeppelin-URIStorage/=lib/openzeppelin-contracts/token/ERC721/extensions/ERC721URIStorage
