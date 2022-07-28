@@ -1,4 +1,4 @@
-openzeppelin-token/=lib/openzeppelin-contracts/contracts/token/
+openzeppelin-token/=lib/openzeppelin-contracts/contracts/token/ERC721
 openzeppelin-security/=lib/openzeppelin-contracts/security/
 openzeppelin-access/=lib/openzeppelin-contracts/access/
 openzeppelin-counters/=lib/openzeppelin-contracts/utils/
