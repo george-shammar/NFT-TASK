@@ -13,6 +13,7 @@ import "openzeppelin-token/ERC721.sol";
 import "openzeppelin-security/Pausable.sol";
 import "openzeppelin-access/Ownable.sol";
 import "openzeppelin-utils/Counters.sol";
+import "openzeppelin-URIStorage/ERC721URIStorage.sol";
 
 
 /// @title A basic ERC721 smart contract that allows user to mint multiple tokens at once.  
