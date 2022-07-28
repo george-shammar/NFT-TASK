@@ -2,3 +2,4 @@ openzeppelin-ERC721/=lib/openzeppelin-contracts/contracts/token/ERC721
 openzeppelin-Pausable/=lib/openzeppelin-contracts/security/Pausable
 openzeppelin-Ownable/=lib/openzeppelin-contracts/access/Ownable
 openzeppelin-Counters/=lib/openzeppelin-contracts/utils/Counters
+openzeppelin-URIStorage/=lib/openzeppelin-contracts/token/ERC721/extensions/ERC721URIStorage
